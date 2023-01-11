@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+""" Creates a basic 2D k-means visualization """
+
 # Generate some random data to cluster
 data = np.random.rand(100, 2)
 
