@@ -1,4 +1,6 @@
 *.png
 *.jpg
 *.gif
+!cuttlefish.gif
+!iterations_4.gif
 .vscode
