@@ -2,6 +2,8 @@
 
 This Github repository contains code to run the k-means algorithm for image compression and create corresponding visualizations.
 
+![](https://github.com/SebastianCharmot/kmeans_image_compression/blob/master/cuttlefish.gif)
+
 ## Getting Started
 
 ### Dependencies
@@ -10,47 +12,10 @@ All of the required libraries can be found in the requirements.txt file.
 
 ### Understanding K-Means
 
-The basic_viz.py file contains code that performs k-means in 2D space. 
+The basic_viz.py file contains code that performs k-means in 2D space. It may be worthwhile to reference this code first if you are new to k-means. 
 
-### Executing program
+![](https://github.com/SebastianCharmot/kmeans_image_compression/blob/master/cuttlefish.gif)
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+## K-Means for Image Compression
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+The main file to run k-means for image compression is `k_means.py`. Simply modify the filepath to match your jpg file. 
