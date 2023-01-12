@@ -24,11 +24,15 @@ Below are some examples of the potential use cases:
 
 ### Visualizing the centroids and compressed images as k-means iterates
 
-
+![](https://github.com/SebastianCharmot/kmeans_image_compression/blob/master/sea_turtle.gif)
 
 ### Comparing Different Values of $k$ 
 
+![](https://github.com/SebastianCharmot/kmeans_image_compression/blob/master/comparing_k's.png)
+
 ### Visualizing the final centroids
+
+![](https://github.com/SebastianCharmot/kmeans_image_compression/blob/master/comparing_centroids.png)
 
 
 
