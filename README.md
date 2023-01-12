@@ -24,6 +24,8 @@ Below are some examples of the potential use cases:
 
 ### Visualizing the centroids and compressed images as k-means iterates
 
+
+
 ### Comparing Different Values of $k$ 
 
 ### Visualizing the final centroids

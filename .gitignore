@@ -1,10 +1,13 @@
 *.png
-    !comparing_k's.png
-    !comparing_centroids.png
+!comparing_k's.png
+!comparing_centroids.png
+
 *.jpg
+
 *.gif
-    !cuttlefish.gif
-    !iterations_4.gif
-    !sea_turtle.gif
+!cuttlefish.gif
+!iterations_4.gif
+!sea_turtle.gif
+
 .vscode
 .gitignore
