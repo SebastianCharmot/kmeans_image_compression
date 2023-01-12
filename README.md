@@ -8,7 +8,7 @@ This Github repository contains code to run the k-means algorithm for image comp
 
 ### Dependencies
 
-All of the required libraries can be found in the requirements.txt file. 
+All of the required libraries can be found in the [requirements.txt](https://github.com/SebastianCharmot/kmeans_image_compression/blob/master/requirements.txt) file. 
 
 ### Understanding K-Means
 
