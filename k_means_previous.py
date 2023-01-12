@@ -33,8 +33,8 @@ def init_centroids(num_clusters, image):
     centroids_init = np.empty([num_clusters,3])
 
     for i in range(num_clusters):
-        rand_row = random.randint(0,H)
-        rand_col = random.randint(0,W)
+        rand_row = random.randint(0,H-1)
+        rand_col = random.randint(0,W-1)
         centroids_init[i] =image[rand_row,rand_col]
 
     return centroids_init
@@ -161,12 +161,12 @@ def main(args):
     # Initialize centroids
     print('[INFO] Centroids initialized')
     centroids = init_centroids(num_clusters, image)
-    plot_centroids(centroids=centroids,before=0)
+    # plot_centroids(centroids=centroids,before=0)
 
     # Update centroids 
     update_centroids(centroids,image,max_iter,print_every)
 
-    plot_centroids(centroids=centroids,before=1)
+    # plot_centroids(centroids=centroids,before=1)
 
     # Update large image with centroids calculated on small image
     print(25 * '=')
@@ -177,17 +177,17 @@ def main(args):
     plt.figure(figure_idx)
     figure_idx += 1
     plt.imshow(image_clustered)
-    # plt.title(f'$k={num_clusters}$')
+    plt.title(f'$k={num_clusters}$, run #3')
     plt.axis('off')
-    savepath = os.path.join('.', f'compressed_version_k{num_clusters}.png')
-    # plt.savefig(fname=savepath, transparent=True, format='jpg', bbox_inches='tight', dpi=300)
+    savepath = os.path.join('.', f'compressed_version_k{num_clusters}_run3.png')
+    plt.savefig(fname=savepath, transparent=True, format='jpg', bbox_inches='tight', dpi=300)
 
     print('\nCOMPLETE')
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--large_path', default='cosmo.jpg',
+    parser.add_argument('--large_path', default='cuttlefish.jpg',
                         help='Path to large image')
     parser.add_argument('--max_iter', type=int, default=30,
                         help='Maximum number of iterations')

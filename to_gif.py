@@ -1,14 +1,14 @@
 import glob
-# import os 
 from PIL import Image
 import re
 
+""" Creates a GIF of all the png images in a folder """
+
 def make_gif(frame_folder):
  
-    # Create the frames
     frames = []
 
-    # sort by name so order is preserved 
+    # sort by name so proper order is preserved 
     imgs = sorted(glob.glob("{}/*.png".format(frame_folder)))
     imgs.sort(key=lambda f: int(re.sub('\D', '', f)))
 
